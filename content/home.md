@@ -50,7 +50,7 @@ Well-formatted lists help break down complex information into digestible chunks:
 Sometimes we need to highlight important thoughts or quote external sources:
 
 > "Typography is the craft of endowing human language with a durable visual form."
-> 
+>
 > — Robert Bringhurst, The Elements of Typographic Style
 
 This quote perfectly captures the essence of what we're trying to achieve with digital typography—creating lasting, beautiful representations of human thought and communication.

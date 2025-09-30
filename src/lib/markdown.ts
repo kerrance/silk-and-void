@@ -27,7 +27,7 @@ export async function getPostData(id: string): Promise<PostData> {
   const processedContent = await remark()
     .use(html, { sanitize: false })
     .process(matterResult.content);
-  
+
   const contentHtml = processedContent.toString();
 
   // Create excerpt from first paragraph
@@ -57,7 +57,7 @@ export async function getAllPostsData(): Promise<PostData[]> {
   const allPostsData = await Promise.all(
     allPostIds.map(async (id) => await getPostData(id))
   );
-  
+
   // Sort posts by date
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {

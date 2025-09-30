@@ -43,7 +43,7 @@ export default function Home({ postData }: HomeProps) {
 
         {/* Main Article Content from Markdown */}
         <MarkdownRenderer content={postData.content} />
-        
+
         {/* Call to Action */}
         <div className="mt-8 text-center space-y-4">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -125,7 +125,7 @@ export default function Home({ postData }: HomeProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const postData = await getPostData('home');
-  
+
   return {
     props: {
       postData,

@@ -5,9 +5,9 @@ interface MarkdownRendererProps {
   className?: string;
 }
 
-export default function MarkdownRenderer({ 
-  content, 
-  size = 'lg', 
+export default function MarkdownRenderer({
+  content,
+  size = 'lg',
   color = 'slate',
   className = ''
 }: MarkdownRendererProps) {
@@ -26,7 +26,7 @@ export default function MarkdownRenderer({
   };
 
   return (
-    <article 
+    <article
       className={`prose ${sizeClasses[size]} ${colorClasses[color]} dark:prose-invert mx-auto max-w-none ${className}`}
       dangerouslySetInnerHTML={{ __html: content }}
     />

@@ -79,7 +79,7 @@ export default function Typography({ postData }: TypographyProps) {
           {/* Color Variations */}
           <section>
             <h2 className="text-2xl font-bold mb-6 text-center">Color Variations</h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-foreground/5 rounded-lg p-6">
                 <h3 className="text-lg font-semibold mb-4 text-center">Slate Theme</h3>
@@ -107,7 +107,7 @@ export default function Typography({ postData }: TypographyProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const postData = await getPostData('typography');
-  
+
   return {
     props: {
       postData,
