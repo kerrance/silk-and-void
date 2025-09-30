@@ -1,18 +1,7 @@
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
 import { getPostData, getAllPostIds, PostData } from "../lib/markdown";
 import MarkdownRenderer from "../components/MarkdownRenderer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 interface PostProps {
   postData: PostData;
@@ -20,9 +9,7 @@ interface PostProps {
 
 export default function Post({ postData }: PostProps) {
   return (
-    <div
-      className={`${geistSans.variable} ${geistMono.variable} font-sans min-h-screen bg-background text-foreground`}
-    >
+    <div className="min-h-screen bg-background text-foreground">
       <div className="max-w-4xl mx-auto px-8 py-12">
         {/* Navigation */}
         <nav className="mb-12">

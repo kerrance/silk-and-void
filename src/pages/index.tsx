@@ -1,23 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import { GetStaticProps } from "next";
 import { getPostData, PostData } from "../lib/markdown";
 import MarkdownRenderer from "../components/MarkdownRenderer";
 import Head from "next/head";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 interface HomeProps {
   postData: PostData;
 }
-
 
 export default function Home({ postData }: HomeProps) {
   return (
@@ -35,9 +23,7 @@ export default function Home({ postData }: HomeProps) {
         <meta name="copyright" content="Silk & Void" />
       </Head>
 
-      <div
-        className={`${geistSans.variable} ${geistMono.variable} font-sans min-h-screen bg-background text-foreground`}
-      >
+      <div className="min-h-screen bg-background text-foreground">
         <div className="max-w-4xl mx-auto px-8 py-12">
           {/* Header */}
           <header className="text-center mb-12">

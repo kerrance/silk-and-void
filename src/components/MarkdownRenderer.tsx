@@ -27,7 +27,7 @@ export default function MarkdownRenderer({
 
   return (
     <article
-      className={`prose ${sizeClasses[size]} ${colorClasses[color]} dark:prose-invert mx-auto max-w-none ${className}`}
+      className={`prose ${sizeClasses[size]} ${colorClasses[color]} dark:prose-invert mx-auto max-w-none prose-headings:scroll-mt-20 prose-a:break-words ${className}`}
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );
