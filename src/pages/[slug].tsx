@@ -52,8 +52,16 @@ export default function Post({ postData }: PostProps) {
 
         {/* Footer */}
         <footer className="mt-16 pt-8 border-t border-foreground/10 text-center">
-          <p className="text-sm text-foreground/60">
-            Content powered by Markdown and Tailwind Typography
+          <p className="">
+            Published by&nbsp;
+            <a
+              className="hover:underline hover:underline-offset-4"
+              href="https://www.razorsharp.digital"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Razor Sharp
+            </a>
           </p>
         </footer>
       </div>
