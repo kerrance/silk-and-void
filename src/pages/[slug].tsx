@@ -43,7 +43,7 @@ export default function Post({ postData }: PostProps) {
           <div className="flex items-center justify-center gap-4 mt-4 text-sm text-foreground/60">
             <span>By {postData.author}</span>
             <span>•</span>
-            <time>{new Date(postData.date).toLocaleDateString()}</time>
+            <time>{new Date(postData.date).toLocaleDateString("en-GB")}</time>
           </div>
         </header>
 
